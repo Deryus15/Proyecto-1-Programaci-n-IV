@@ -1,0 +1,66 @@
+/* Contenedor exterior para centrar la tarjeta */
+.contenedor-recomendaciones {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* La tarjeta blanca principal */
+.tarjeta-recomendaciones {
+    background-color: #ffffff;
+    max-width: 800px;
+    padding: 40px 50px;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); 
+    border-left: 6px solid #b83100; /* Color rojo de tu paleta */
+}
+
+/* El título principal */
+.titulo-rojo-recom {
+    color: #b83100;
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+/* Configuración de la lista */
+.lista-recomendaciones {
+    list-style: none; /* Quitamos las viñetas normales */
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilo para cada punto de recomendación */
+.lista-recomendaciones li {
+    color: #333333; 
+    font-size: 1.1rem;
+    line-height: 1.7; 
+    margin-bottom: 25px; 
+    position: relative; 
+    padding-left: 30px; 
+    text-align: justify;
+}
+
+/* Negrita para los títulos de cada punto */
+.lista-recomendaciones li strong {
+    color: #000000;
+}
+
+/* El cuadrado rojo personalizado para cada viñeta */
+.lista-recomendaciones li::before {
+    content: ""; 
+    position: absolute;
+    left: 0;
+    top: 8px; 
+    width: 14px;
+    height: 14px;
+    background-color: #b83100; 
+    border-radius: 2px; 
+}
+
+/* Evitar margen inferior en el último elemento */
+.lista-recomendaciones li:last-child {
+    margin-bottom: 0;
+}

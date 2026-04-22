@@ -1,0 +1,68 @@
+body {
+    background-color: #610200; 
+    margin: 0;
+}
+
+.contenedor-general {
+    width: 100%;
+    padding: 40px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.menu-final {
+    background-color: #480000;
+
+    padding: 40px 20px 30px 20px; 
+    text-align: center;
+    width: 100%;
+    display: block;
+}
+.menu-final {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espacio entre botones */
+    margin-bottom: 40px;
+}
+
+.boton-ovalado {
+    background-color: #ffffff;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 12px 35px;
+    border-radius: 50px; /* Esto crea el efecto ovalado */
+    border: 2px solid #eeeeee;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.boton-ovalado:hover {
+    background-color: #f8f8f8;
+    transform: translateY(-3px); /* Pequeño salto hacia arriba */
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.seccion-imagen {
+    background-color: #480000;
+
+    padding: 40px 20px 30px 20px; 
+    text-align: center;
+    width: 100%;
+    display: block;
+}
+.seccion-imagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen-boton {
+    width: 300px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+/* Efecto de zoom en la imagen */
+.link-imagen:hover .imagen-boton {
+    transform: scale(1.1);
+}

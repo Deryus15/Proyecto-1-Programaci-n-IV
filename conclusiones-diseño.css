@@ -1,0 +1,68 @@
+/* Contenedor exterior para centrar la tarjeta */
+.contenedor-conclusiones {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* La tarjeta blanca principal */
+.tarjeta-conclusiones {
+    background-color: #ffffff;
+    max-width: 800px; /* Ancho máximo para mantener la legibilidad */
+    padding: 40px 50px;
+    border-radius: 8px; /* Bordes ligeramente redondeados */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Sombra suave para dar profundidad */
+    
+    /* La característica barra roja lateral */
+    border-left: 6px solid #b83100; /* Color rojo estilo Oracle */
+}
+
+/* El título principal */
+.titulo-rojo {
+    color: #b83100; /* Color rojo estilo Oracle */
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+/* Configuración de la lista */
+.lista-conclusiones {
+    list-style: none; /* Quitamos las viñetas por defecto */
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilo para cada punto de conclusión */
+.lista-conclusiones li {
+    color: #333333; /* Gris oscuro para el texto, más fácil de leer que negro puro */
+    font-size: 1.1rem;
+    line-height: 1.7; /* Buen espacio entre líneas para lectura */
+    margin-bottom: 25px; /* Espacio entre cada conclusión */
+    position: relative; /* Necesario para posicionar nuestro cuadrado rojo personalizado */
+    padding-left: 30px; /* Espacio para que el cuadrado no tape el texto */
+    text-align: justify;
+}
+
+/* Negrita para los títulos de cada punto */
+.lista-conclusiones li strong {
+    color: #000000;
+}
+
+/* EL TRUCO: Crear el cuadrado rojo personalizado para cada viñeta */
+.lista-conclusiones li::before {
+    content: ""; /* Es un elemento vacío que usaremos como dibujo */
+    position: absolute;
+    left: 0;
+    top: 8px; /* Alinea el cuadradito con la primera línea de texto */
+    width: 14px;
+    height: 14px;
+    background-color: #b83100; /* Color rojo estilo Oracle */
+    border-radius: 2px; /* Un pequeñísimo redondeo en las esquinas del cuadrito */
+}
+
+/* Evitar margen inferior en el último elemento para que la tarjeta no quede desbalanceada */
+.lista-conclusiones li:last-child {
+    margin-bottom: 0;
+}

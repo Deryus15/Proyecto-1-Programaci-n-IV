@@ -1,0 +1,40 @@
+body {
+    background-color: #000; 
+    margin: 0;
+}
+
+/* Convertimos la etiqueta <img> en un fondo a pantalla completa */
+.imagen-fondo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover; /* Hace que la foto cubra todo sin deformarse ni aplastarse */
+    z-index: -1; /* Envía la imagen detrás de todo */
+    opacity: 0.4;
+}
+
+/* bloquea el scroll */
+body {
+    margin: 0;
+    overflow: hidden; 
+}
+
+/* El contenedor que agrupa el logo, título y botón */
+.pantalla-completa {
+    display: flex;
+    flex-direction: column; /* Apila los elementos uno debajo del otro */
+    justify-content: space-evenly; /* Reparte el espacio en blanco equitativamente entre ellos */
+    align-items: center; /* Centra todo horizontalmente */
+    height: 100vh; /* Obliga a que el contenedor mida exactamente el alto de la pantalla */
+    position: relative;
+    z-index: 1; /* Asegura que el contenido quede por encima de la imagen de fondo */
+}
+
+/* Evita que el contenedor del botón ocupe toda la pantalla por accidente */
+main.contenedor-boton {
+    height: auto;
+    width: auto;
+    padding-bottom: 20px; /* Un poco de espacio extra abajo para que no quede pegado al borde */
+}

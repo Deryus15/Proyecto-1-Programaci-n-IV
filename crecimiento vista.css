@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #520000;
+    overflow-x: hidden;
+}
+
+/* 2. ESTILOS DEL TÍTULO */
+.Contenido {
+    background-color: #740e00;
+
+    padding: 40px 20px 30px 20px; 
+    text-align: center;
+    width: 100%;
+    display: block;
+}
+
+.Contenido ul {
+    list-style: none; 
+    padding: 0 20px;
+    display: flex; 
+    justify-content: space-evenly; 
+    flex-wrap: wrap; 
+}
+
+.Contenido a {
+    text-decoration: none; 
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 3rem;
+    transition: color 0.3s ease; 
+}
+
+.Contenido h1 {
+    color: #ffffff;
+    font-size: 3.5rem;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.Contenido p {
+    color: #f0f0f0; 
+    font-family: Arial, sans-serif;
+    
+    margin-bottom: 25px; 
+}
+
+/* 3. ESTILOS DE LA BARRA DEL MENÚ */
+.barra-navegacion {
+    background-color: #c43e2b;
+    border-top: 4px solid #ff0000;
+    padding: 15px 0;
+    width: 100%;
+    display: block;
+}
+
+.barra-navegacion ul {
+    list-style: none; 
+    padding: 0 20px;
+    display: flex; 
+    justify-content: space-evenly; 
+    flex-wrap: wrap; 
+}
+
+.barra-navegacion a {
+    text-decoration: none; 
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s ease; 
+}
+
+/*PARA MARCAR QUE ESTOY EN ESA PAGINA */
+
+.crecimiento-vista a {
+    text-decoration: none; 
+    color: #fcfc00;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s ease; 
+}
+
+.barra-navegacion a:hover {
+    color: #ffcccc; 
+}
+
+.Contenido a:hover {
+    color: #ff5a19; 
+}
+
+.crecimiento-titulo {
+    background-color: #2d0500;
+    border-top: 4px solid #b83100;
+    padding: 40px 50px; 
+    width: 100%;
+    display: block;
+}
+
+.crecimiento-titulo h2 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.crecimiento-titulo p {
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+/* TABLA */
+.contenedor-tabla {
+    width: 100%;
+    max-width: 1100px;
+    margin: 40px auto;
+    overflow-x: auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+}
+
+/* Diseño base de la tabla */
+.tabla-oracle {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #2d0500; /* Fondo oscuro base */
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Títulos de las columnas (La franja roja superior) */
+.tabla-oracle th {
+    background-color: #740e00; /* Rojo principal */
+    color: #ffffff;
+    padding: 20px 15px;
+    text-align: left;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    border-bottom: 4px solid #b83100; /* Línea naranja/roja brillante */
+}
+
+/* Celdas de información */
+.tabla-oracle td {
+    padding: 18px 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Línea divisoria muy sutil */
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* EFECTO HOVER: Iluminación de la fila al pasar el mouse */
+.tabla-oracle tbody tr {
+    transition: background-color 0.3s ease;
+}
+
+.tabla-oracle tbody tr:hover {
+    background-color: rgba(184, 49, 0, 0.3); /* Resplandor rojizo */
+    cursor: default;
+}

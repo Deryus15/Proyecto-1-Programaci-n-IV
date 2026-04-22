@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #470000;
+    overflow-x: hidden;
+}
+
+/* 2. ESTILOS DEL TÍTULO */
+.Contenido {
+    background-color: #740e00;
+
+    padding: 40px 20px 30px 20px; 
+    text-align: center;
+    width: 100%;
+    display: block;
+}
+
+.Contenido ul {
+    list-style: none; 
+    padding: 0 20px;
+    display: flex; 
+    justify-content: space-evenly; 
+    flex-wrap: wrap; 
+}
+
+.Contenido a {
+    text-decoration: none; 
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 3rem;
+    transition: color 0.3s ease; 
+}
+
+.Contenido h1 {
+    color: #ffffff;
+    font-size: 3.5rem;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.Contenido p {
+    color: #f0f0f0; 
+    font-family: Arial, sans-serif;
+    
+    margin-bottom: 25px; 
+}
+
+/* 3. ESTILOS DE LA BARRA DEL MENÚ */
+.barra-navegacion {
+    background-color: #c43e2b;
+    border-top: 4px solid #ff0000;
+    padding: 15px 0;
+    width: 100%;
+    display: block;
+}
+
+.barra-navegacion ul {
+    list-style: none; 
+    padding: 0 20px;
+    display: flex; 
+    justify-content: space-evenly; 
+    flex-wrap: wrap; 
+}
+
+.barra-navegacion a {
+    text-decoration: none; 
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s ease; 
+}
+
+/*PARA MARCAR QUE ESTOY EN ESA PAGINA */
+
+.caracteristicas-vista a {
+    text-decoration: none; 
+    color: #fcfc00;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s ease; 
+}
+
+.barra-navegacion a:hover {
+    color: #ffcccc; 
+}
+
+.Contenido a:hover {
+    color: #ff5a19; 
+}
+
+.imagen-caracteristicas img {
+    width: 100%;
+    height: 250px;
+    
+    /* RECORTE */
+    object-fit: cover;
+    object-position: center;
+    
+    /* Centrado y borde */
+    display: block;
+    margin: 0 auto 20px auto;
+    border-radius: 8px;
+}
+
+/* TEXTO CARACTERISTICAS */
+.caracteristicas-titulo {
+    background-color: #da2f00;
+    border-top: 4px solid #b83100;
+    padding: 40px 50px; 
+    width: 100%;
+    display: block;
+}
+
+.caracteristicas-titulo h2 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+/*CARACTERISTICAS CUADROS*/
+
+
+.contenedor-caracteristicas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 30px; 
+    max-width: 1100px; 
+    margin: 40px auto; 
+    padding: 0 20px;
+}
+
+/* Diseño individual de cada cuadro */
+.tarjeta-caracteristica {
+    background-color: #ab2800;
+    color: #ffffff;
+    padding: 35px 30px;
+    border-radius: 10px;
+    
+    
+    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+    cursor: default;
+}
+
+.tarjeta-caracteristica img {
+    width: 100%;
+    height: 250px;
+    
+    /* RECORTE */
+    object-fit: cover;
+    object-position: center;
+    
+    /* Centrado y borde */
+    display: block;
+    margin: 0 auto 20px auto;
+    border-radius: 8px;
+}
+
+.tarjeta-caracteristica h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+    letter-spacing: 0.5px;
+}
+
+.tarjeta-caracteristica p {
+    margin: 0;
+    line-height: 1.6;
+    font-size: 1rem;
+    text-align: justify;
+    opacity: 0.9;
+}
+
+/* EFECTO Zoom + Iluminación */
+.tarjeta-caracteristica:hover {
+    transform: scale(1.03);
+    /* resplandor */
+    box-shadow: 0 15px 30px rgba(193, 58, 0, 0.696); 
+    filter: brightness(1.1);
+}
+
+@media (max-width: 768px) {
+    .contenedor-caracteristicas {
+        grid-template-columns: 1fr;
+    }
+}

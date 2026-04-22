@@ -1,0 +1,94 @@
+body {
+	background: #420000;
+	font-family: "Comfortaa", sans-serif;
+	position: relative;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.main-content {
+	text-align: center;
+	text-transform: uppercase;
+	scroll-snap-type: y mandatory;
+	position: relative;
+	height: 100vh;
+	overflow-y: hidden;
+}
+
+.hover,
+.word,
+h1 {
+	cursor: pointer;
+}
+
+h1 {
+	position: relative;
+	color: #ffffff;
+	font: 900 60px Montserrat;
+	text-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+
+.concept-five {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 30vh;
+	
+	.word {
+		width: 600px;
+		margin: auto;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 80%;
+		&:hover {
+			.char:nth-child(even) {
+				top: 20px;
+			}
+			.char:nth-child(odd) {
+				top: -20px;
+			}
+		}
+	}
+	.char {
+		flex: 1;
+		position: relative;
+		display: inline-block;
+		top: 0;
+		transition: 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+	}
+}
+
+@keyframes falls {
+	0% {
+		opacity: 0;
+		top: 0;
+	}
+	20% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+		top: 100px;
+	}
+}
+
+.concept-five .word {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; 
+    margin: 10px 0; 
+}
+
+.concept-five .char {
+    flex: none; 
+    position: relative;
+    display: inline-block;
+    transition: 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}

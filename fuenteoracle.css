@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Good Times';
+    src: url('good times rg.otf') format('opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1, h2 {
+    font-family: 'Good Times', sans-serif;
+}

@@ -1,0 +1,85 @@
+/* Contenedor exterior para centrar la tarjeta */
+.contenedor-infografia {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* La tarjeta blanca principal */
+.tarjeta-infografia {
+    background-color: #ffffff;
+    max-width: 800px;
+    padding: 40px 50px;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); 
+    border-left: 6px solid #b83100; /* Borde rojo característico */
+}
+
+/* El título principal */
+.titulo-rojo-info {
+    color: #b83100;
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+/* Configuración de la lista */
+.lista-infografia {
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilo para cada punto */
+.lista-infografia li {
+    color: #333333; 
+    font-size: 1.1rem;
+    line-height: 1.6; 
+    margin-bottom: 30px; 
+    position: relative; 
+    padding-left: 30px; 
+    text-align: justify;
+}
+
+/* Negrita para el nombre del sitio */
+.lista-infografia li strong {
+    color: #000000;
+    font-size: 1.2rem;
+}
+
+/* El cuadrado rojo personalizado para cada viñeta */
+.lista-infografia li::before {
+    content: ""; 
+    position: absolute;
+    left: 0;
+    top: 8px; 
+    width: 14px;
+    height: 14px;
+    background-color: #b83100; 
+    border-radius: 2px; 
+}
+
+/* ESTILO DEL ENLACE HACIA LAS PÁGINAS */
+.enlace-fuente {
+    display: inline-block;
+    margin-top: 8px;
+    color: #b83100; /* Color rojo de tu paleta */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+/* Efecto al pasar el mouse sobre el enlace */
+.enlace-fuente:hover {
+    color: #e63e00; /* Se vuelve un rojo más brillante */
+    text-decoration: underline; /* Aparece una línea debajo para marcar que es un link */
+    transform: translateX(5px); /* Se mueve un poquitito a la derecha */
+}
+
+/* Evitar margen inferior en el último elemento */
+.lista-infografia li:last-child {
+    margin-bottom: 0;
+}
